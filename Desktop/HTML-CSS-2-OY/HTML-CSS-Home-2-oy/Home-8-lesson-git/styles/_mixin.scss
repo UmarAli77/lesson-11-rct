@@ -1,0 +1,8 @@
+@mixin odatiy-tugma {
+    border: none;
+    border-radius: 5px;
+}
+@mixin odatiy-rang ($rang){
+    background-color: $rang;
+    @include odatiy-tugma
+}

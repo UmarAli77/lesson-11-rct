@@ -1,0 +1,645 @@
+@import "mixin.scss";
+
+.container{
+    // border: 1px solid red;
+    margin: 0px auto;
+    max-width: 1100px;
+    .header_text{
+        // border: 1px solid red;
+        margin: 0px auto;
+        max-width: 1100px;
+        background-color: rgba(0, 0, 255, 0.8);
+        .header_paragraf{
+            text-align: center;
+            span{
+                color: white;
+            }
+        }
+    }
+    
+    .navigation{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 70px;
+        .logo_header img{
+            width: 30px;
+        }
+        .royxat_header{
+            .menu_btn{
+                display: none;
+                .menu_cart{
+                    background-color: lightblue;
+                    border: 1px solid red;
+                    // display: none;
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+
+            .korzinka_logo{
+                width: 35px;
+                height: 35px;
+                @include odatiy-rang(rgb(32, 178, 170, 0.5));
+            }
+            .korzinka_logo img{
+                align-items: center;
+                width: 20px;
+                height: 20px;
+            }
+            .home_blue_text{
+                color: lightblue;
+                text-decoration: none;
+            }
+            ul{
+            display: flex;
+            gap: 35px;
+                list-style: none;
+                li{
+                    .odatiy{
+                        text-decoration: none;
+                        color: #aaa;
+                        transition: all 1s;
+                    }
+                    .odatiy:hover{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    .main1_1_0{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background: url(../img/fon.svg);
+        .main_1_1{
+            .since{
+                font-size: 18px;
+                span{
+                    color: lightblue;
+                }
+            }
+            button{
+                padding: 15px 25px;
+                color: white;
+                @include odatiy-rang (rgba(0, 191, 255, 0.8));
+                margin-bottom: 10px;
+                transition: all 1s;
+            }
+            button:hover{
+                background-color: rgba(0, 191, 255, 0.6);
+            }
+            p{
+                color: #aaa;
+            }
+            .paragraf_main_1_1{
+                color: #aaa;
+                margin-bottom: 50px;
+            }
+            h2{
+            font-size: 48px;
+                span{
+                    color: lightblue;
+                }
+            }
+        }
+    }
+    .main_2_0{
+        background: url(../img/orqa\ fon.svg);
+        display: flex;
+        margin-top: 120px;
+        .orqa_fon_img{
+            width: 1100px;
+            z-index: 1;
+        }
+
+        .main_2_1{
+            background: url(../img/yum\ yum\ logo.png) no-repeat;
+        }
+        .main_2_1 h2{
+            margin-left: 30px;
+            // border: 1px solid red;
+            font-size: 48px;
+            color: lightblue;
+            margin-top: 150px;
+        }
+        .main_2_1 h2, p, button{
+            margin-left: 30px;
+        }
+        .main_2_1 p{
+            color: #aaa;
+        }
+        .main_2_1 button{
+            @include odatiy-rang (rgba(0, 191, 255, 0.8));
+            padding: 15px 25px;
+            color: white;
+            margin-top: 50px;
+        }
+        
+        .girl{
+            margin-top: 150px;
+            margin-left: 100px;
+        }
+    }
+    .how_cards_text{
+        text-align: center;
+        color: lightblue;
+        font-size: 48px;
+    }
+    .cards_img_main_3_1{
+        max-width: 320px;
+        transition: all 1s;
+    }
+    .cards_img_main_3_1:hover{
+        transform: scale(1.5);
+    }
+    .card_adapt h3, .paragraf_p{
+        text-align: center;
+    }
+    .card_adapt, .card_accept, .card_manage{
+        height: 400px;
+        width: 310px;
+        text-align: center;
+    }
+    .cards_item{
+        display: flex;
+        gap: 60px;
+    }
+    .sarlavha_h3{
+        font-size: 18px;
+    }
+    .paragraf_p{
+        font-size: 16px;
+        color: #aaa;
+        word-spacing: 3px;
+    }
+    .cards_text_burger{
+        width: 500px;
+        // border: 1px solid red;
+    }
+    .cards_img_burger img{
+        width: 160px;
+        border-radius: 15px;
+        margin-right: 10px;
+    }
+    .cards_text_about{
+        text-align: center;
+        color: #aaa;
+    }
+    .cards_text_about h2{
+        font-size: 48px;
+        color: lightblue;
+    }
+    .cards_menu_btn{
+        margin-left: 390px;
+    }
+    .cards_menu_btn button{
+        margin-left: 10px;
+        @include odatiy-tugma;
+        padding: 10px 25px;
+        color: black;
+        transition: all 1s;
+    }
+    .cards_menu_btn button:hover{
+        background-color: rgb(0, 255, 255);
+        color: white;
+    }
+    .cards_all{
+        background: url(../img/orqa\ fon.svg);
+    }
+    .cards_1_1{
+        margin-top: 20px;
+        display: flex;
+        background-color: white;
+        width: 500px;
+        padding: 20px 15px;
+    }
+    .cards_2_1{
+        display: flex;
+        background-color: white;
+        width: 500px;
+        padding: 20px 15px;
+        margin: 20px 0px;
+    }
+    .cards_3_1{
+        display: flex;
+        background-color: white;
+        width: 500px;
+        padding: 20px 15px;
+    }
+    .cards_text_burger{
+        width: 370px;
+        height: 165px;
+        box-sizing: border-box;
+        // border: 1px solid red;
+    }
+    .cards_paragraf{
+        color: #aaa;
+        font-size: 15px;
+    }
+    .cards_text_burger_h2{
+        font-size: 19px;
+    }
+    .cards_text_burger_span_1{
+        position: absolute;
+        top: 2415px;
+        left: 650px;
+        color: lightblue;
+    }
+    .cards_text_burger_span_2{
+        position: absolute;
+        top: 2640px;
+        left: 650px;
+        color: lightblue;
+    }
+    .cards_text_burger_span_3{
+        position: absolute;
+        top: 2863px;
+        left: 650px;
+        color: lightblue;
+    }
+    .btn_1_item{
+        padding: 5px 10px;
+        border: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    .btn_1_text{
+        padding: 7px 25px;
+        color: white;
+        background-color: #35b8be;
+        border: none;
+        width: 120px;
+        height: 30px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .cards_4_1{
+        margin-top: 20px;
+        display: flex;
+        background-color: white;
+        width: 500px;
+        padding: 20px 15px;
+    }
+    .cards_5_1{
+        display: flex;
+        background-color: white;
+        width: 500px;
+        padding: 20px 15px;
+        margin: 20px 0px;
+    }
+    .cards_6_1{
+        display: flex;
+        background-color: white;
+        width: 500px;
+        padding: 20px 15px;
+    }
+    .cards_text_burger{
+        width: 370px;
+        height: 165px;
+        box-sizing: border-box;
+        // border: 1px solid red;
+    }
+    .cards_paragraf{
+        color: #aaa;
+        font-size: 15px;
+    }
+    .cards_text_burger_h2{
+        font-size: 19px;
+    }
+    .cards_text_burger_span_4{
+        position: absolute;
+        top: 2415px;
+        left: 1150px;
+        color: lightblue;
+    }
+    .cards_text_burger_span_5{
+        position: absolute;
+        top: 2640px;
+        left: 1150px;
+        color: lightblue;
+    }
+    .cards_text_burger_span_6{
+        position: absolute;
+        top: 2865px;
+        left: 1150px;
+        color: lightblue;
+    }
+    .btn_1_item{
+        padding: 5px 10px;
+        border: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    .btn_1_text{
+        padding: 7px 25px;
+        color: white;
+        background-color: lightblue;
+        border: none;
+        width: 120px;
+        height: 30px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    .cards_burger_menu_item{
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .order_online_about_btn button{
+        background-color: lightblue;
+        border: none;
+        padding: 10px 25px;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        margin-left: 480px;
+        margin-bottom: 50px;
+    }
+    .order_online_about_img img{
+        width: 500px;
+    }
+    .order_online_about_text h2{
+        color: lightseagreen;
+        font-size: 34px;
+    }
+    .order_online_about_text p{
+        color: #aaa;
+        font-size: 16px;
+    }
+    .order_online_about_text button{
+        padding: 10px 25px;
+        @include odatiy-rang (rgb(32, 178, 170));
+        color: white;
+        margin-top: 50px;
+    }
+    .order_all{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .order_online_about{
+        margin-top: 50px;
+    }
+    .call_our_text h2{
+        color: lightseagreen;
+        font-size: 34px;
+    }
+    .call_our_text p{
+        color: #aaa;
+        font-size: 16px;
+    }
+    .call_our_text button{
+        padding: 10px 25px;
+        @include odatiy-rang (rgb(32, 178, 170));
+        color: white;
+        margin-top: 50px;
+    }
+    .call_our_text img{
+        width: 500px;
+    }
+    .call_our{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .support_img img{
+        width: 500px;
+        height: 450px;
+    }
+    .support_text_img{
+        z-index: 0;
+        position: absolute;
+        top: 4400px;
+        left: 830px;
+    }
+    .support_text h2{
+        color: white;
+        margin-top: 150px;
+        font-size: 34px;
+        margin-left: 45px;
+    }
+    .support_text span{
+        color: rgba($color: #3300ff, $alpha: 0.6);
+    }
+    .support_text button{
+        position: absolute;
+        top: 4500px;
+        left: 830px;
+        padding: 10px 25px;
+        color: rgba($color: #0400ff, $alpha: 0.8);
+        margin-top: 50px;
+        @include odatiy-rang (rgb(255, 255, 255));
+        z-index: 5;
+    }
+    .support_text{
+        width: 500px;
+        height: 452px;
+        background-color: lightseagreen;
+    }
+    .support_about{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .img_text_about img{
+        width: 30px;
+    }
+    .img_text_about p{
+        color: #aaa;
+        font-size: 18px;
+    }
+    .riyxat_ul p{
+        text-transform: uppercase;
+    }
+    .riyxat_ul ul{
+        list-style: none;
+        // display: flex;
+        gap: 25px;
+        li{
+            margin-bottom: 25px;
+            a{
+                text-decoration: none;
+                color: #aaa;
+            }
+        }
+    }
+    .riyxat_ul{
+        display: flex;
+    }
+    .footer_all{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: url(../img/banner\ orqa\ fon.svg) no-repeat;
+    }
+    .footer_img{
+        background: url(../img/footer\ battle.svg) no-repeat;
+    }
+    .end_text_logo span{
+        color: lightblue;
+        border-bottom: 2px solid lightblue;
+    }
+    .end_text_logo{
+        margin-left: 100px;
+    }
+    .end_all{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .end_logo{
+        margin-right: 100px;
+        background: url(../img/footer\ battle.svg) no-repeat;
+    }
+    .end_logo img{
+        margin: 0px 15px;
+        transition: all 1s;
+    }
+    .end_logo img:hover{
+        border: 1px solid #aaa;
+        padding: 5px 5px;
+        border-radius: 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .royxat_header li, a{
+        display: none;
+    }
+    .menu_btn{
+        display: inline;
+        border: 1px solid red;
+    }
+    .menu_cart{
+        display: block;
+    }
+    .container{
+        flex-direction: column;
+        margin: 0px auto;
+        justify-content: center;
+    }
+    .header_text{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main1_1_0{
+        flex-direction: column;
+    }
+    .main_1_1{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .main_1_1{
+        h2{
+            font-size: 16px;
+
+        }
+        p{
+            font-size: 0.6em;
+        }
+    }
+    body{
+        max-width: 700px;
+    }
+    .main1_2 img{
+        max-width: 600px;
+    }
+    .main_2_1{
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main_2_0{
+        flex-direction: column;
+    }
+    .main_2_1{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main_2_2{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .main_3_cards{
+        flex-direction: column;
+    }
+    .cards_item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards_burger_menu{
+        flex-direction: column;
+    }
+    .cards_text_about{
+        text-align: center;
+    }
+    .cards_menu_btn{
+        display: flex;
+        align-items: center;
+    }
+    .cards_burger_menu_item{
+        flex-direction: row;
+    }
+    .cards_1{
+        width: 49%;
+    }
+    .cards_1 div{
+        flex-direction: column;
+        text-align: center;
+        // align-items: center;
+    }
+    .cards_2{
+        width: 49%;
+    }
+    .cards_2 div{
+        text-align: center;
+        flex-direction: column;
+    }
+    .order_online_about{
+        flex-direction: column;
+    }
+    .order_online_about_btn{
+        text-align: center;
+        align-items: center;
+    }
+    .order_all{
+        flex-direction: column;
+    }
+    .order_all div{
+        text-align: center;
+    }
+    .call_our{
+        flex-direction: column;
+    }
+    .call_our div{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .support_about{
+        flex-direction: column;
+    }
+    .support_about div{
+        text-align: center;
+        margin-left: 50px;
+    }
+    .footer_all{
+        flex-direction: column;
+    }
+    .footer_all div{
+        text-align: center;
+    }
+    .end_all{
+        margin-top: 50px;
+    }
+    .end_logo{
+        gap: 20px;
+        flex-direction: row;
+    }
+}

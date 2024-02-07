@@ -1,0 +1,634 @@
+.container {
+  margin: 0px auto;
+  max-width: 1100px;
+}
+.container .header_text {
+  margin: 0px auto;
+  max-width: 1100px;
+  background-color: rgba(0, 0, 255, 0.8);
+}
+.container .header_text .header_paragraf {
+  text-align: center;
+}
+.container .header_text .header_paragraf span {
+  color: white;
+}
+.container .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+}
+.container .navigation .logo_header img {
+  width: 30px;
+}
+.container .navigation .royxat_header .menu_btn {
+  display: none;
+}
+.container .navigation .royxat_header .menu_btn .menu_cart {
+  background-color: lightblue;
+  border: 1px solid red;
+  width: 25px;
+  height: 25px;
+}
+.container .navigation .royxat_header .korzinka_logo {
+  width: 35px;
+  height: 35px;
+  background-color: rgba(32, 178, 170, 0.5);
+  border: none;
+  border-radius: 5px;
+}
+.container .navigation .royxat_header .korzinka_logo img {
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+.container .navigation .royxat_header .home_blue_text {
+  color: lightblue;
+  text-decoration: none;
+}
+.container .navigation .royxat_header ul {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+}
+.container .navigation .royxat_header ul li .odatiy {
+  text-decoration: none;
+  color: #aaa;
+  transition: all 1s;
+}
+.container .navigation .royxat_header ul li .odatiy:hover {
+  color: black;
+}
+.container .main1_1_0 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: url(../img/fon.svg);
+}
+.container .main1_1_0 .main_1_1 .since {
+  font-size: 18px;
+}
+.container .main1_1_0 .main_1_1 .since span {
+  color: lightblue;
+}
+.container .main1_1_0 .main_1_1 button {
+  padding: 15px 25px;
+  color: white;
+  background-color: rgba(0, 191, 255, 0.8);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: all 1s;
+}
+.container .main1_1_0 .main_1_1 button:hover {
+  background-color: rgba(0, 191, 255, 0.6);
+}
+.container .main1_1_0 .main_1_1 p {
+  color: #aaa;
+}
+.container .main1_1_0 .main_1_1 .paragraf_main_1_1 {
+  color: #aaa;
+  margin-bottom: 50px;
+}
+.container .main1_1_0 .main_1_1 h2 {
+  font-size: 48px;
+}
+.container .main1_1_0 .main_1_1 h2 span {
+  color: lightblue;
+}
+.container .main_2_0 {
+  background: url(../img/orqa\ fon.svg);
+  display: flex;
+  margin-top: 120px;
+}
+.container .main_2_0 .orqa_fon_img {
+  width: 1100px;
+  z-index: 1;
+}
+.container .main_2_0 .main_2_1 {
+  background: url(../img/yum\ yum\ logo.png) no-repeat;
+}
+.container .main_2_0 .main_2_1 h2 {
+  margin-left: 30px;
+  font-size: 48px;
+  color: lightblue;
+  margin-top: 150px;
+}
+.container .main_2_0 .main_2_1 h2, .container .main_2_0 p, .container .main_2_0 button {
+  margin-left: 30px;
+}
+.container .main_2_0 .main_2_1 p {
+  color: #aaa;
+}
+.container .main_2_0 .main_2_1 button {
+  background-color: rgba(0, 191, 255, 0.8);
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  color: white;
+  margin-top: 50px;
+}
+.container .main_2_0 .girl {
+  margin-top: 150px;
+  margin-left: 100px;
+}
+.container .how_cards_text {
+  text-align: center;
+  color: lightblue;
+  font-size: 48px;
+}
+.container .cards_img_main_3_1 {
+  max-width: 320px;
+  transition: all 1s;
+}
+.container .cards_img_main_3_1:hover {
+  transform: scale(1.5);
+}
+.container .card_adapt h3, .container .paragraf_p {
+  text-align: center;
+}
+.container .card_adapt, .container .card_accept, .container .card_manage {
+  height: 400px;
+  width: 310px;
+  text-align: center;
+}
+.container .cards_item {
+  display: flex;
+  gap: 60px;
+}
+.container .sarlavha_h3 {
+  font-size: 18px;
+}
+.container .paragraf_p {
+  font-size: 16px;
+  color: #aaa;
+  word-spacing: 3px;
+}
+.container .cards_text_burger {
+  width: 500px;
+}
+.container .cards_img_burger img {
+  width: 160px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+.container .cards_text_about {
+  text-align: center;
+  color: #aaa;
+}
+.container .cards_text_about h2 {
+  font-size: 48px;
+  color: lightblue;
+}
+.container .cards_menu_btn {
+  margin-left: 390px;
+}
+.container .cards_menu_btn button {
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  color: black;
+  transition: all 1s;
+}
+.container .cards_menu_btn button:hover {
+  background-color: rgb(0, 255, 255);
+  color: white;
+}
+.container .cards_all {
+  background: url(../img/orqa\ fon.svg);
+}
+.container .cards_1_1 {
+  margin-top: 20px;
+  display: flex;
+  background-color: white;
+  width: 500px;
+  padding: 20px 15px;
+}
+.container .cards_2_1 {
+  display: flex;
+  background-color: white;
+  width: 500px;
+  padding: 20px 15px;
+  margin: 20px 0px;
+}
+.container .cards_3_1 {
+  display: flex;
+  background-color: white;
+  width: 500px;
+  padding: 20px 15px;
+}
+.container .cards_text_burger {
+  width: 370px;
+  height: 165px;
+  box-sizing: border-box;
+}
+.container .cards_paragraf {
+  color: #aaa;
+  font-size: 15px;
+}
+.container .cards_text_burger_h2 {
+  font-size: 19px;
+}
+.container .cards_text_burger_span_1 {
+  position: absolute;
+  top: 2415px;
+  left: 650px;
+  color: lightblue;
+}
+.container .cards_text_burger_span_2 {
+  position: absolute;
+  top: 2640px;
+  left: 650px;
+  color: lightblue;
+}
+.container .cards_text_burger_span_3 {
+  position: absolute;
+  top: 2863px;
+  left: 650px;
+  color: lightblue;
+}
+.container .btn_1_item {
+  padding: 5px 10px;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+.container .btn_1_text {
+  padding: 7px 25px;
+  color: white;
+  background-color: #35b8be;
+  border: none;
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.container .cards_4_1 {
+  margin-top: 20px;
+  display: flex;
+  background-color: white;
+  width: 500px;
+  padding: 20px 15px;
+}
+.container .cards_5_1 {
+  display: flex;
+  background-color: white;
+  width: 500px;
+  padding: 20px 15px;
+  margin: 20px 0px;
+}
+.container .cards_6_1 {
+  display: flex;
+  background-color: white;
+  width: 500px;
+  padding: 20px 15px;
+}
+.container .cards_text_burger {
+  width: 370px;
+  height: 165px;
+  box-sizing: border-box;
+}
+.container .cards_paragraf {
+  color: #aaa;
+  font-size: 15px;
+}
+.container .cards_text_burger_h2 {
+  font-size: 19px;
+}
+.container .cards_text_burger_span_4 {
+  position: absolute;
+  top: 2415px;
+  left: 1150px;
+  color: lightblue;
+}
+.container .cards_text_burger_span_5 {
+  position: absolute;
+  top: 2640px;
+  left: 1150px;
+  color: lightblue;
+}
+.container .cards_text_burger_span_6 {
+  position: absolute;
+  top: 2865px;
+  left: 1150px;
+  color: lightblue;
+}
+.container .btn_1_item {
+  padding: 5px 10px;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+.container .btn_1_text {
+  padding: 7px 25px;
+  color: white;
+  background-color: lightblue;
+  border: none;
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.container .cards_burger_menu_item {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.container .order_online_about_btn button {
+  background-color: lightblue;
+  border: none;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 480px;
+  margin-bottom: 50px;
+}
+.container .order_online_about_img img {
+  width: 500px;
+}
+.container .order_online_about_text h2 {
+  color: lightseagreen;
+  font-size: 34px;
+}
+.container .order_online_about_text p {
+  color: #aaa;
+  font-size: 16px;
+}
+.container .order_online_about_text button {
+  padding: 10px 25px;
+  background-color: rgb(32, 178, 170);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 50px;
+}
+.container .order_all {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .order_online_about {
+  margin-top: 50px;
+}
+.container .call_our_text h2 {
+  color: lightseagreen;
+  font-size: 34px;
+}
+.container .call_our_text p {
+  color: #aaa;
+  font-size: 16px;
+}
+.container .call_our_text button {
+  padding: 10px 25px;
+  background-color: rgb(32, 178, 170);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 50px;
+}
+.container .call_our_text img {
+  width: 500px;
+}
+.container .call_our {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .support_img img {
+  width: 500px;
+  height: 450px;
+}
+.container .support_text_img {
+  z-index: 0;
+  position: absolute;
+  top: 4400px;
+  left: 830px;
+}
+.container .support_text h2 {
+  color: white;
+  margin-top: 150px;
+  font-size: 34px;
+  margin-left: 45px;
+}
+.container .support_text span {
+  color: rgba(51, 0, 255, 0.6);
+}
+.container .support_text button {
+  position: absolute;
+  top: 4500px;
+  left: 830px;
+  padding: 10px 25px;
+  color: rgba(4, 0, 255, 0.8);
+  margin-top: 50px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  z-index: 5;
+}
+.container .support_text {
+  width: 500px;
+  height: 452px;
+  background-color: lightseagreen;
+}
+.container .support_about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .img_text_about img {
+  width: 30px;
+}
+.container .img_text_about p {
+  color: #aaa;
+  font-size: 18px;
+}
+.container .riyxat_ul p {
+  text-transform: uppercase;
+}
+.container .riyxat_ul ul {
+  list-style: none;
+  gap: 25px;
+}
+.container .riyxat_ul ul li {
+  margin-bottom: 25px;
+}
+.container .riyxat_ul ul li a {
+  text-decoration: none;
+  color: #aaa;
+}
+.container .riyxat_ul {
+  display: flex;
+}
+.container .footer_all {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: url(../img/banner\ orqa\ fon.svg) no-repeat;
+}
+.container .footer_img {
+  background: url(../img/footer\ battle.svg) no-repeat;
+}
+.container .end_text_logo span {
+  color: lightblue;
+  border-bottom: 2px solid lightblue;
+}
+.container .end_text_logo {
+  margin-left: 100px;
+}
+.container .end_all {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .end_logo {
+  margin-right: 100px;
+  background: url(../img/footer\ battle.svg) no-repeat;
+}
+.container .end_logo img {
+  margin: 0px 15px;
+  transition: all 1s;
+}
+.container .end_logo img:hover {
+  border: 1px solid #aaa;
+  padding: 5px 5px;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .royxat_header li, a {
+    display: none;
+  }
+  .menu_btn {
+    display: inline;
+    border: 1px solid red;
+  }
+  .menu_cart {
+    display: block;
+  }
+  .container {
+    flex-direction: column;
+    margin: 0px auto;
+    justify-content: center;
+  }
+  .header_text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main1_1_0 {
+    flex-direction: column;
+  }
+  .main_1_1 {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .main_1_1 h2 {
+    font-size: 16px;
+  }
+  .main_1_1 p {
+    font-size: 0.6em;
+  }
+  body {
+    max-width: 700px;
+  }
+  .main1_2 img {
+    max-width: 600px;
+  }
+  .main_2_1 {
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main_2_0 {
+    flex-direction: column;
+  }
+  .main_2_1 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main_2_2 {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .main_3_cards {
+    flex-direction: column;
+  }
+  .cards_item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards_burger_menu {
+    flex-direction: column;
+  }
+  .cards_text_about {
+    text-align: center;
+  }
+  .cards_menu_btn {
+    display: flex;
+    align-items: center;
+  }
+  .cards_burger_menu_item {
+    flex-direction: row;
+  }
+  .cards_1 {
+    width: 49%;
+  }
+  .cards_1 div {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cards_2 {
+    width: 49%;
+  }
+  .cards_2 div {
+    text-align: center;
+    flex-direction: column;
+  }
+  .order_online_about {
+    flex-direction: column;
+  }
+  .order_online_about_btn {
+    text-align: center;
+    align-items: center;
+  }
+  .order_all {
+    flex-direction: column;
+  }
+  .order_all div {
+    text-align: center;
+  }
+  .call_our {
+    flex-direction: column;
+  }
+  .call_our div {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .support_about {
+    flex-direction: column;
+  }
+  .support_about div {
+    text-align: center;
+    margin-left: 50px;
+  }
+  .footer_all {
+    flex-direction: column;
+  }
+  .footer_all div {
+    text-align: center;
+  }
+  .end_all {
+    margin-top: 50px;
+  }
+  .end_logo {
+    gap: 20px;
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=style.css.map */
