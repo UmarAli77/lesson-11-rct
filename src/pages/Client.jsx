@@ -16,7 +16,7 @@ function Client() {
     useEffect(() => {
         async function getCategory() {
             try {
-                const response = await axios.get(`${backendUrl}/categories`);
+                const response = await axios.get(`${backendUrl}/products`);
                 setCart(response.data);
             }catch(eer) {
                 console.log('Xatolik yuz berdi', eer);
@@ -30,7 +30,7 @@ function Client() {
             const headers = {
                 Authorization: token,
             }
-            const response = await axios.delete(`${backendUrl}/categories/${id}`, {
+            const response = await axios.delete(`${backendUrl}/products/${id}`, {
                 headers: headers
             })
             if(response.data) {
@@ -46,7 +46,15 @@ function Client() {
             cart.map(el => 
                 <div className='w-[230px] text-center shadow-lg p-4 hover:shadow-xl'>
                     <img src={el.image} alt="" />
-                    <h2>{el.name}</h2>
+                    <div>
+                        <h2>{el.title}</h2>
+                        <h3>{el.subTitle}</h3>
+                        <p>{el.description}</p>
+                        <p>{el.rate}</p>
+                        <p>{el.price}</p>
+                        <p>{el.size}</p>
+                        <p>{el.color}</p>
+                    </div>
                     <button onClick={() => handleDelete(el._id)} className='bg-green-400 hover:bg-green-800 text-white font-bold py-2 px-4 rounded'>Delete</button>
                 </div>
             )

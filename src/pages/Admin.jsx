@@ -5,11 +5,17 @@ import { backendUrl } from '../Url/backendUrl';
 import { useNavigate } from 'react-router-dom';
 
 function Admin() {
-    const [name, setName] = useState('');
-    const [img, setImg] = useState('');
+    const [title, setTitle] = useState('');
+    const [subTitle, setSubTitle] = useState('');
+    const [image, setImage] = useState('');
+    const [description, setDescription] = useState('');
+    const [rate, setRate] = useState(0);
+    const [price, setPrice] = useState(0);
+    const [size, setSize] = useState('');
+    const [color, setColor] = useState('');
     const navigate = useNavigate();
     const handleSubmit = async () => {
-        if(!name || !img) {
+        if(!title || !subTitle || !image || !description || !rate || !price || !size || !color) {
             toast("Maydonlarni toldiring !")
         }
         try {
@@ -18,10 +24,16 @@ function Admin() {
                 Authorization: token,
             };
             const data = {
-                name: name,
-                image: img
+                title: title,
+                subTitle: subTitle,
+                image: image,
+                description: description,
+                rate: rate,
+                price: price,
+                size: size,
+                color: color
             }
-            const response = await axios.post(`${backendUrl}/categories`, data, {
+            const response = await axios.post(`${backendUrl}/products`, data, {
                 headers: headers
             });
             if(response.data) {
@@ -34,19 +46,57 @@ function Admin() {
   return (
     <div className='w-screen h-screen flex items-center justify-center bg-purple-600'>
       <div className='bg-white p-4 shadow-lg hover:shadow-xl'>
-        <h1 className='text-center text-xl pb-2'>Create Category</h1>
-        <div>
-            <label htmlFor="name" className='text-lg'>Category Name</label>
-            <br />
-            <input type="text" id="name" className='cursor-pointer py-3 border-2' value={name} onChange={(ev) => setName(ev.target.value)} placeholder="Enter Category Name" />
+        <h1 className='text-center text-xl pb-2'>Create Cart</h1>
+        <div className='flex items-center gap-4'>
+            <div>
+                <label htmlFor="name" className='text-lg'>Cart Title</label>
+                <br />
+                <input type="text" id="name" className='cursor-pointer py-3 border-2' value={title} onChange={(ev) => setTitle(ev.target.value)} placeholder="Enter Cart Title" />
+            </div>
+            <div>
+                <label htmlFor="img" className='text-lg'>Cart SubTitle</label>
+                <br />
+                <input type="text" id="img" className='cursor-pointer py-3 border-2' value={subTitle} onChange={(ev) => setSubTitle(ev.target.value)} placeholder="Enter Cart subTitle" />
+            </div>
+        </div>
+        <div className='flex items-center gap-4'>
+            <div>
+                <label htmlFor="img" className='text-lg'>Image Address</label>
+                <br />
+                <input type="text" id="img" className='cursor-pointer py-3 border-2' value={image} onChange={(ev) => setImage(ev.target.value)} placeholder="Enter Image Address" />
+            </div>
+            <div>
+                <label htmlFor="img" className='text-lg'>Cart Description</label>
+                <br />
+                <input type="text" id="img" className='cursor-pointer py-3 border-2' value={description} onChange={(ev) => setDescription(ev.target.value)} placeholder="Enter Description" />
+            </div>
+        </div>
+        <div className='flex items-center gap-4'>
+            <div>
+                <label htmlFor="img" className='text-lg'>Cart Rate</label>
+                <br />
+                <input type="text" id="img" className='cursor-pointer py-3 border-2' value={rate} onChange={(ev) => setRate(ev.target.value)} placeholder="Enter Rate" />
+            </div>
+            <div>
+                <label htmlFor="img" className='text-lg'>Cart Price</label>
+                <br />
+                <input type="text" id="img" className='cursor-pointer py-3 border-2' value={price} onChange={(ev) => setPrice(ev.target.value)} placeholder="Enter Price" />
+            </div>
+        </div>
+        <div className='flex items-center gap-4'>
+            <div>
+                <label htmlFor="img" className='text-lg'>Cart Size</label>
+                <br />
+                <input type="text" id="img" className='cursor-pointer py-3 border-2' value={size} onChange={(ev) => setSize(ev.target.value)} placeholder="Enter Size" />
+            </div>
+            <div>
+                <label htmlFor="img" className='text-lg'>Cart Color</label>
+                <br />
+                <input type="text" id="img" className='cursor-pointer py-3 border-2' value={color} onChange={(ev) => setColor(ev.target.value)} placeholder="Enter Color" />
+            </div>
         </div>
         <div>
-            <label htmlFor="img" className='text-lg'>Image Address</label>
-            <br />
-            <input type="text" id="img" className='cursor-pointer py-3 border-2' value={img} onChange={(ev) => setImg(ev.target.value)} placeholder="Enter Image Address" />
-        </div>
-        <div>
-            <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-10' onClick={handleSubmit}>Submit</button>
+            <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-40 mt-5' onClick={handleSubmit}>Submit</button>
             <ToastContainer />
         </div>
       </div>
