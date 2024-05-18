@@ -44,16 +44,16 @@ function Client() {
     <div className='grid grid-cols-3 justify-evenly'>
         {
             cart.map(el => 
-                <div className='w-[230px] text-center shadow-lg p-4 hover:shadow-xl'>
+                <div className='w-[230px] shadow-lg p-4 hover:shadow-xl'>
                     <img src={el.image} alt="" />
-                    <div>
-                        <h2>{el.title}</h2>
-                        <h3>{el.subTitle}</h3>
+                    <div className='p-4'>
+                        <h2 className='text-xl font-extrabold'>{el.title}</h2>
+                        <h3 className='text-base text-gray-500'>{el.subTitle}</h3>
                         <p>{el.description}</p>
-                        <p>{el.rate}</p>
-                        <p>{el.price}</p>
-                        <p>{el.size}</p>
-                        <p>{el.color}</p>
+                        <p className='font-normal'>{el.rate}</p>
+                        <p className='font-medium'>{el.price}</p>
+                        <p className='font-medium'>{el.size}</p>
+                        <p className='font-semibold'>{el.color}</p>
                     </div>
                     <button onClick={() => handleDelete(el._id)} className='bg-green-400 hover:bg-green-800 text-white font-bold py-2 px-4 rounded'>Delete</button>
                 </div>

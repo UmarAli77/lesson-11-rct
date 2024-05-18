@@ -25,7 +25,7 @@ function Admin() {
             };
             const data = {
                 title: title,
-                subTitle: subTitle,
+                subtitle: subTitle,
                 image: image,
                 description: description,
                 rate: rate,
