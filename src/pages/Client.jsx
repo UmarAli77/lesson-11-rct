@@ -48,7 +48,7 @@ function Client() {
                     <img src={el.image} alt="" />
                     <div className='p-4'>
                         <h2 className='text-xl font-extrabold'>{el.title}</h2>
-                        <h3 className='text-base text-gray-500'>{el.subTitle}</h3>
+                        <h3 className='text-base text-gray-500'>{el.subtitle}</h3>
                         <p>{el.description}</p>
                         <p className='font-normal'>{el.rate}</p>
                         <p className='font-medium'>{el.price}</p>

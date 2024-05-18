@@ -41,6 +41,7 @@ function Admin() {
             }
         } catch(err) {
             console.log('Xatolik yuz berdi', err);
+            console.log(`${backendUrl}/products`);
         }
     }
   return (
