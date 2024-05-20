@@ -2,12 +2,17 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { backendUrl } from '../Url/backendUrl'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Login() {
     const navigate = useNavigate();
     const [ email, setEmail ] = useState('');
     const [ password, setPassword ] = useState('');
     const Submit = async () => {
+      if(!email || !password) {
+        toast('Maydonlarni toldiring !')
+      }
       try {
           const response = await axios.post(`${backendUrl}/auth`, {
           email: email,
@@ -34,6 +39,7 @@ function Login() {
             <input placeholder='test123' className='cursor-pointer ml-12 border-2 border-black border-solid rounded-md' id='password' type="password" value={password} onChange={(el) => {setPassword(el.target.value)}} /><br />
         </div>
         <button onClick={Submit} type='button' className='px-8 py-2 bg-black rounded-md text-white mt-8 ml-24'>Login</button>
+        <ToastContainer />
       </div>
     </div>
   )

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './pages/Layout';
 
 const Client = React.lazy(() => import('./pages/Client'))
 const Login = React.lazy(() => import('./pages/Login'))
@@ -11,9 +12,11 @@ function App() {
     <BrowserRouter>
       <React.Suspense>
         <Routes>
-          <Route path="/" element={<Client />} />
+          <Route path='/' element={<Layout />}>
+            <Route path="/" element={<Client />} />
+            <Route path='/admin' element={<Admin />} />
+          </Route>
           <Route path='/login' element={<Login />} />
-          <Route path='/admin' element={<Admin />} />
         </Routes>
       </React.Suspense>
     </BrowserRouter>

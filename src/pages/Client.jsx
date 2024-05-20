@@ -44,8 +44,8 @@ function Client() {
     <div className='grid grid-cols-3 justify-evenly'>
         {
             cart.map(el => 
-                <div className='w-[230px] shadow-lg p-4 hover:shadow-xl'>
-                    <img src={el.image} alt="" />
+                <div className='w-[230px] shadow-lg p-4 hover:shadow-xl my-5'>
+                    <img className='w-[200px] h-[200px]' src={el.image} alt="" />
                     <div className='p-4'>
                         <h2 className='text-xl font-extrabold'>{el.title}</h2>
                         <h3 className='text-base text-gray-500'>{el.subtitle}</h3>
